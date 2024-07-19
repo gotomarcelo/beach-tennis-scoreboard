@@ -8,6 +8,11 @@ export const ScoreStyle = styled.section`
 
   height: 100svh;
 
+  @media (max-width: 460px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .orange {
     background-color: #f1520d;
     grid-row-start: 1;
@@ -19,6 +24,14 @@ export const ScoreStyle = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 460px) {
+      grid-row-start: 1;
+      grid-column-start: 1;
+
+      grid-row-end: 2;
+      grid-column-end: 2;
+    }
   }
 
   .green {
@@ -32,6 +45,14 @@ export const ScoreStyle = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 460px) {
+      grid-row-start: 2;
+      grid-column-start: 1;
+
+      grid-row-end: 3;
+      grid-column-end: 2;
+    }
   }
 
   .numbers {
@@ -52,7 +73,7 @@ export const ScoreStyle = styled.section`
     }
 
     @media (max-width: 460px) {
-      font-size: 80px;
+      font-size: 200px;
     }
   }
 
@@ -63,11 +84,11 @@ export const ScoreStyle = styled.section`
     justify-self: center;
     font-size: 160px;
     color: #ffffff;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -80,6 +101,10 @@ export const ScoreStyle = styled.section`
 
     @media (max-width: 460px) {
       font-size: 40px;
+      background-color: #ffffff;
+      color: #000000;
+      top: calc(50% - 20px);
+      width: 100%;
     }
 
     .greenset {
