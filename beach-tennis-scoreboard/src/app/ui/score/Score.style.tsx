@@ -6,7 +6,7 @@ export const ScoreStyle = styled.section`
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
 
-  height: 100vh;
+  height: 100svh;
 
   .orange {
     background-color: #f1520d;
