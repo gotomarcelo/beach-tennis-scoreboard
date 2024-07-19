@@ -35,23 +35,23 @@ export const ScoreStyle = styled.section`
   }
 
   .numbers {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     font-size: 320px;
     color: #ffffff;
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 240px;
     }
-    @media screen and (min-width: 460px) and (max-width: 768px) {
+    @media (min-width: 460px) and (max-width: 768px) {
       font-size: 160px;
     }
 
-    @media screen and (max-width: 460px) {
+    @media (max-width: 460px) {
       font-size: 80px;
     }
   }
@@ -70,28 +70,28 @@ export const ScoreStyle = styled.section`
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 100px;
     }
 
-    @media screen and (min-width: 460px) and (max-width: 768px) {
+    @media (min-width: 460px) and (max-width: 768px) {
       font-size: 80px;
     }
 
-    @media screen and (max-width: 460px) {
+    @media (max-width: 460px) {
       font-size: 40px;
     }
 
     .greenset {
       width: 200px;
       text-align: end;
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         width: 100px;
       }
-      @media screen and (min-width: 460px) and (max-width: 768px) {
+      @media (min-width: 460px) and (max-width: 768px) {
         width: 100px;
       }
-      @media screen and (max-width: 460px) {
+      @media (max-width: 460px) {
         width: 50px;
       }
     }
@@ -99,13 +99,13 @@ export const ScoreStyle = styled.section`
     }
     .orangeset {
       width: 200px;
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         width: 100px;
       }
-      @media screen and (min-width: 460px) and (max-width: 768px) {
+      @media (min-width: 460px) and (max-width: 768px) {
         width: 100px;
       }
-      @media screen and (max-width: 460px) {
+      @media (max-width: 460px) {
         width: 50px;
       }
     }
