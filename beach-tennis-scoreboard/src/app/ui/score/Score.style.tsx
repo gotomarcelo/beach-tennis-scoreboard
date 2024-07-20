@@ -14,7 +14,21 @@ export const ScoreStyle = styled.section`
   }
 
   .orange {
-    background-color: #f1520d;
+    background: radial-gradient(
+          circle at 0% 50%,
+          rgba(96, 16, 48, 0) 9px,
+          #f87f26 10px,
+          rgba(96, 16, 48, 0) 11px
+        )
+        5px 10px,
+      radial-gradient(
+        at 100% 100%,
+        rgba(96, 16, 48, 0) 12px,
+        #f87f26 12px,
+        rgba(96, 16, 48, 0) 100px
+      ),
+      #f1520d;
+    background-size: 12px 9px;
     grid-row-start: 1;
     grid-column-start: 1;
 
@@ -35,7 +49,21 @@ export const ScoreStyle = styled.section`
   }
 
   .green {
-    background-color: #a3c510;
+    background: radial-gradient(
+          circle at 0% 50%,
+          rgba(96, 16, 48, 0) 9px,
+          #8aaf04 10px,
+          rgba(96, 16, 48, 0) 11px
+        )
+        5px 10px,
+      radial-gradient(
+        at 100% 100%,
+        rgba(96, 16, 48, 0) 12px,
+        #8aaf04 12px,
+        rgba(96, 16, 48, 0) 100px
+      ),
+      #a3c510;
+    background-size: 12px 9px;
     grid-row-start: 1;
     grid-column-start: 2;
 
@@ -166,12 +194,12 @@ export const ScoreStyle = styled.section`
     }
 
     &.orange {
-      background-color: #f1520d;
+      background: #f1520d;
       bottom: 20px;
     }
 
     &.green {
-      background-color: #a3c510;
+      background: #a3c510;
       bottom: 10px;
       right: calc(50% + 10px);
       @media (max-width: 460px) {
@@ -221,7 +249,7 @@ export const ScoreStyle = styled.section`
       margin-bottom: 15px;
     }
 
-    .close{
+    .close {
       position: absolute;
       border: solid 2px #000000;
       border-radius: 50px;
@@ -242,7 +270,6 @@ export const ScoreStyle = styled.section`
         padding: 10px;
         border-radius: 20px;
         border: solid 2px #000000;
-
       }
       .no {
         background-color: #ffffff;
