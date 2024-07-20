@@ -81,7 +81,7 @@ export const ScoreStyle = styled.section`
     display: flex;
     top: 5vh;
     position: absolute;
-    right: calc(50% - 132px);
+    right: calc(50% - 251px);
     font-size: 160px;
     color: #ffffff;
     -webkit-touch-callout: none;
@@ -93,10 +93,12 @@ export const ScoreStyle = styled.section`
 
     @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 100px;
+      right: calc(50% - 132px);
     }
 
     @media (min-width: 460px) and (max-width: 768px) {
       font-size: 80px;
+      right: calc(50% - 125px);
     }
 
     @media (max-width: 460px) {
@@ -140,7 +142,7 @@ export const ScoreStyle = styled.section`
     color: #ffffff;
     width: max-content;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 20px;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -187,6 +189,69 @@ export const ScoreStyle = styled.section`
       width: 100%;
       height: 40px;
       background-color: #ffffff;
+    }
+  }
+
+  .antimodal {
+    position: absolute;
+    z-index: 2;
+    height: 100svh;
+    width: 100svw;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal {
+    position: absolute;
+    z-index: 3;
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    border-radius: 0 50px 50px 50px;
+    top: 20px;
+    left: 20px;
+    padding: 30px;
+    border: solid 2px #000000;
+    margin-right: 30px;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .close{
+      position: absolute;
+      border: solid 2px #000000;
+      border-radius: 50px;
+      padding: 5px 7px;
+      background-color: #ffffff;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      .yes {
+        background-color: #000000;
+        color: #ffffff;
+        width: max-content;
+        padding: 10px;
+        border-radius: 20px;
+        border: solid 2px #000000;
+
+      }
+      .no {
+        background-color: #ffffff;
+        color: #000000;
+        width: max-content;
+        padding: 10px;
+        border-radius: 20px;
+        border: solid 2px #000000;
+      }
     }
   }
 `;
