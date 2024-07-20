@@ -81,7 +81,7 @@ export const ScoreStyle = styled.section`
     display: flex;
     top: 5vh;
     position: absolute;
-    justify-self: center;
+    right: calc(50% - 132px);
     font-size: 160px;
     color: #ffffff;
     -webkit-touch-callout: none;
@@ -101,10 +101,9 @@ export const ScoreStyle = styled.section`
 
     @media (max-width: 460px) {
       font-size: 40px;
-      background-color: #ffffff;
-      color: #000000;
-      top: calc(50% - 20px);
-      width: 100%;
+      place-content: center;
+      right: 0px;
+      top: 20px;
     }
 
     .greenset {
@@ -143,8 +142,8 @@ export const ScoreStyle = styled.section`
     padding: 10px;
     border-radius: 20px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
   }
 
   .decrease {
@@ -166,7 +165,7 @@ export const ScoreStyle = styled.section`
 
     &.orange {
       background-color: #f1520d;
-      bottom: 10px;
+      bottom: 20px;
     }
 
     &.green {
@@ -178,6 +177,16 @@ export const ScoreStyle = styled.section`
         bottom: unset;
         top: calc(50% - 100px);
       }
+    }
+  }
+
+  .whiteline {
+    @media (max-width: 460px) {
+      position: absolute;
+      top: calc(50% - 20px);
+      width: 100%;
+      height: 40px;
+      background-color: #ffffff;
     }
   }
 `;

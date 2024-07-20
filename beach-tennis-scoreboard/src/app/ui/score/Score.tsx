@@ -74,6 +74,7 @@ export default function Score() {
       <div className="decrease green" onClick={decreaseGreen}>
       <div className="minus"/>
       </div>
+      <div className="whiteline"/>
     </ScoreStyle>
   );
 }
