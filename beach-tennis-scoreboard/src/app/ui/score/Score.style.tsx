@@ -135,4 +135,49 @@ export const ScoreStyle = styled.section`
       }
     }
   }
+
+  .reset {
+    background-color: #000000;
+    color: #ffffff;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .decrease {
+    color: #ffffff;
+    width: max-content;
+    padding: 27px 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    font-size: 50px;
+    line-height: normal;
+
+    .minus {
+      width: 20px;
+      height: 6px;
+      background-color: #ffffff;
+    }
+
+    &.orange {
+      background-color: #f1520d;
+      bottom: 10px;
+    }
+
+    &.green {
+      background-color: #a3c510;
+      bottom: 10px;
+      right: calc(50% + 10px);
+      @media (max-width: 460px) {
+        right: 10px;
+        bottom: unset;
+        top: calc(50% - 100px);
+      }
+    }
+  }
 `;
