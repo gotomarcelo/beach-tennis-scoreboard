@@ -200,7 +200,7 @@ export const ScoreStyle = styled.section`
 
     &.green {
       background: #a3c510;
-      bottom: 10px;
+      bottom: 20px;
       right: calc(50% + 10px);
       @media (max-width: 460px) {
         right: 10px;
