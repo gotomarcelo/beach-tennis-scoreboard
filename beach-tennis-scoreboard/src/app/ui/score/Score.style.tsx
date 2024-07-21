@@ -183,7 +183,7 @@ export const ScoreStyle = styled.section`
     font-weight: bold;
     border-radius: 50%;
     position: absolute;
-    right: 10px;
+    left: 10px;
     font-size: 50px;
     line-height: normal;
 
@@ -196,6 +196,11 @@ export const ScoreStyle = styled.section`
     &.orange {
       background: #f1520d;
       bottom: 20px;
+      left: calc(50% + 10px);
+      @media (max-width: 460px) {
+        left: 10px;
+        bottom: calc(50% - 100px);
+      }
     }
 
     &.green {
@@ -220,14 +225,14 @@ export const ScoreStyle = styled.section`
     }
   }
 
-  .antimodal {
+  .reset__antimodal {
     position: absolute;
     z-index: 2;
     height: 100svh;
     width: 100svw;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  .modal {
+  .reset__modal {
     position: absolute;
     z-index: 3;
     background-color: #ffffff;
@@ -249,7 +254,7 @@ export const ScoreStyle = styled.section`
       margin-bottom: 15px;
     }
 
-    .close {
+    .reset__close {
       position: absolute;
       border: solid 2px #000000;
       border-radius: 50px;
@@ -260,7 +265,7 @@ export const ScoreStyle = styled.section`
       font-weight: bold;
     }
 
-    .buttons {
+    .reset__buttons {
       display: flex;
       justify-content: space-around;
       .yes {

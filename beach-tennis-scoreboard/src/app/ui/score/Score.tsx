@@ -60,16 +60,16 @@ export default function Score() {
       </div>
       {isOpen && (
         <>
-        <div className="antimodal" onClick={() => setIsOpen(false)}>
+        <div className="reset__antimodal" onClick={() => setIsOpen(false)}>
         </div>
-          <div className="modal">
+          <div className="reset__modal">
             <h2>Reiniciar placar?</h2>
             <p>O placar atual será perdido.</p>
-            <div className="buttons">
+            <div className="reset__buttons">
               <button  className="yes" onClick={resetClick}>SIM</button>
               <button className="no" onClick={() => setIsOpen(false)}>NÃO</button>
             </div>
-            <div className="close" onClick={() => setIsOpen(false)}>
+            <div className="reset__close" onClick={() => setIsOpen(false)}>
               X
             </div>
           </div>
