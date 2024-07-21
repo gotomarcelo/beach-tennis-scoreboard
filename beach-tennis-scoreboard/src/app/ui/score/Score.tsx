@@ -12,7 +12,7 @@ export default function Score() {
   const [isOpenConfig, setIsOpenConfig] = useState(true);
   const [parcial, setParcial] = useState(6);
   const [isTie, setIsTie] = useState(1);
-  const [tempParcial, setTempParcial] = useState(3);
+  const [tempParcial, setTempParcial] = useState(6);
   const [tempIsTie, setTempIsTie] = useState(1);
 
   const handleGreenClick = () => {
@@ -128,7 +128,7 @@ export default function Score() {
               Sets do jogo:&nbsp;
               <select
                 name="partialgame"
-                defaultValue={parcial}
+                defaultValue={tempParcial}
                 onChange={handlePartial}
               >
                 <option value={3}>3</option>
@@ -140,7 +140,7 @@ export default function Score() {
               </select>
             </label>
             <label>
-              Se empate: {parcial - 1}X{parcial - 1}, terá Tie?&nbsp;
+              Se empate: {tempParcial - 1}X{tempParcial - 1}, terá Tie?&nbsp;
               <select name="tie" defaultValue={1} onChange={handleTie}>
                 <option value={1}>Sim</option>
                 <option value={0}>Não</option>
@@ -212,9 +212,16 @@ export default function Score() {
         <div className="minus" />
       </div>
       <div className="whiteline">
-        {isTie &&
-          greenParcial == parcial - 1 &&
-          orangeParcial == parcial - 1 && <p className="tie">TIE</p>}
+        <p className="tie">
+          {isTie &&
+            greenParcial == parcial - 1 &&
+            orangeParcial == parcial - 1 &&
+            "TIE"}
+        </p>
+        <div className="gameconfig">
+          <p>Sets: {parcial}</p>
+          <p>Tie: {isTie ? "Sim" : "Não"}</p>
+        </div>
       </div>
     </ScoreStyle>
   );

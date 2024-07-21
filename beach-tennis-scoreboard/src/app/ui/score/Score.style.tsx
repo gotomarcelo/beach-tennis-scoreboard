@@ -391,6 +391,8 @@ export const ScoreStyle = styled.section`
     left: calc(50% - 37px);
     width: 76px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
 
     @media (max-width: 460px) {
       top: calc(50% - 20px);
@@ -404,7 +406,21 @@ export const ScoreStyle = styled.section`
       font-weight: bold;
       font-style: italic;
       @media (max-width: 460px) {
+        width: 76px;
         margin-left: 20px;
+      }
+    }
+
+    .gameconfig{
+      display: none;
+      @media (max-width: 460px) {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: bold;
+        align-items: flex-end;
+        margin-right: 20px;
+        font-style: italic;
       }
     }
   }
