@@ -176,55 +176,6 @@ export const ScoreStyle = styled.section`
     left: 20px;
   }
 
-  .decrease {
-    color: #ffffff;
-    width: max-content;
-    padding: 27px 20px;
-    font-weight: bold;
-    border-radius: 50%;
-    position: absolute;
-    left: 10px;
-    font-size: 50px;
-    line-height: normal;
-
-    .minus {
-      width: 20px;
-      height: 6px;
-      background-color: #ffffff;
-    }
-
-    &.orange {
-      background: #f1520d;
-      bottom: 20px;
-      left: calc(50% + 10px);
-      @media (max-width: 460px) {
-        left: 10px;
-        bottom: calc(50% - 100px);
-      }
-    }
-
-    &.green {
-      background: #a3c510;
-      bottom: 20px;
-      right: calc(50% + 10px);
-      @media (max-width: 460px) {
-        right: 10px;
-        bottom: unset;
-        top: calc(50% - 100px);
-      }
-    }
-  }
-
-  .whiteline {
-    @media (max-width: 460px) {
-      position: absolute;
-      top: calc(50% - 20px);
-      width: 100%;
-      height: 40px;
-      background-color: #ffffff;
-    }
-  }
-
   .reset__antimodal {
     position: absolute;
     z-index: 2;
@@ -283,6 +234,177 @@ export const ScoreStyle = styled.section`
         padding: 10px;
         border-radius: 20px;
         border: solid 2px #000000;
+      }
+    }
+  }
+
+  .config {
+    background-color: #000000;
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px 0 20px 20px;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    @media (max-width: 460px) {
+      top: unset;
+      right: unset;
+      bottom: 20px;
+      left: 20px;
+      border-radius: 20px 20px 20px 0px;
+    }
+  }
+
+  .config__antimodal {
+    position: absolute;
+    z-index: 2;
+    height: 100svh;
+    width: 100svw;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .config__modal {
+    position: absolute;
+    z-index: 3;
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    border-radius: 50px 0px 50px 50px;
+    top: 20px;
+    right: 20px;
+    padding: 30px;
+    border: solid 2px #000000;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 460px) {
+      border-radius: 50px 50px 50px 0px;
+      top: unset;
+      bottom: 20px;
+      right: unset;
+      left: 20px;
+      margin-left: unset;
+      margin-right: 30px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #f1520d;
+      margin-bottom: 15px;
+    }
+
+    select {
+      font-size: 16px;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    .config__close {
+      position: absolute;
+      border: solid 2px #000000;
+      border-radius: 50px;
+      padding: 5px 7px;
+      background-color: #ffffff;
+      top: 0;
+      left: 0;
+      font-weight: bold;
+
+      @media (max-width: 460px) {
+        right: 0;
+        left: unset;
+      }
+    }
+
+    .config__buttons {
+      display: flex;
+      justify-content: space-around;
+      .config__submit {
+        background-color: #000000;
+        color: #ffffff;
+        width: max-content;
+        padding: 10px;
+        border-radius: 20px;
+        border: solid 2px #000000;
+      }
+      .config__cancel {
+        background-color: #ffffff;
+        color: #000000;
+        width: max-content;
+        padding: 10px;
+        border-radius: 20px;
+        border: solid 2px #000000;
+      }
+    }
+  }
+
+  .decrease {
+    color: #ffffff;
+    width: max-content;
+    padding: 27px 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    font-size: 50px;
+    line-height: normal;
+
+    .minus {
+      width: 20px;
+      height: 6px;
+      background-color: #ffffff;
+    }
+
+    &.orange {
+      background: #f1520d;
+      bottom: 20px;
+      left: calc(50% + 10px);
+      @media (max-width: 460px) {
+        left: 10px;
+        bottom: calc(50% - 100px);
+      }
+    }
+
+    &.green {
+      background: #a3c510;
+      bottom: 20px;
+      right: calc(50% + 10px);
+      @media (max-width: 460px) {
+        right: 10px;
+        bottom: unset;
+        top: calc(50% - 100px);
+      }
+    }
+  }
+
+  .whiteline {
+    position: absolute;
+    left: calc(50% - 37px);
+    width: 76px;
+    background-color: #ffffff;
+
+    @media (max-width: 460px) {
+      top: calc(50% - 20px);
+      width: 100%;
+      left: unset;
+      height: 40px;
+    }
+    .tie {
+      font-size: 40px;
+      align-self: center;
+      font-weight: bold;
+      font-style: italic;
+      @media (max-width: 460px) {
+        margin-left: 20px;
       }
     }
   }
