@@ -411,7 +411,7 @@ export const ScoreStyle = styled.section`
       }
     }
 
-    .gameconfig{
+    .gameconfig {
       display: none;
       @media (max-width: 460px) {
         display: flex;
@@ -421,6 +421,43 @@ export const ScoreStyle = styled.section`
         align-items: flex-end;
         margin-right: 20px;
         font-style: italic;
+      }
+    }
+
+    .team__orange {
+      display: none;
+      @media (max-width: 460px) {
+        display: flex;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 2px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.3px);
+        -webkit-backdrop-filter: blur(2.3px);
+        border: 1px solid rgba(255, 255, 255, 1);
+        height: 40px;
+        position: absolute;
+        top: -45px;
+        right: 0;
+        color: #ffffff;
+        font-size:16px;
+      }
+    }
+    .team__green {
+      display: none;
+      @media (max-width: 460px) {
+        display: flex;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 2px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.3px);
+        -webkit-backdrop-filter: blur(2.3px);
+        border: 1px solid rgba(255, 255, 255, 1);
+        height: 40px;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        color: #ffffff;
+        font-size: 16px;
       }
     }
   }

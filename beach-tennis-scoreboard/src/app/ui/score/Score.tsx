@@ -212,6 +212,8 @@ export default function Score() {
         <div className="minus" />
       </div>
       <div className="whiteline">
+      <textarea  className="team__orange" name="teamOrange" />
+      <textarea className="team__green" name="teamGreen" />
         <p className="tie">
           {isTie &&
             greenParcial == parcial - 1 &&
