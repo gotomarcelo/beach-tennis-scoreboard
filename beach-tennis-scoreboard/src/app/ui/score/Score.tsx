@@ -79,6 +79,26 @@ export default function Score() {
     }
   }, [isTie, greenParcial, orangeParcial, parcial]);
 
+  useEffect(() => {
+    const handleKeyDown = (event: { key: string; }) => {
+      if (event.key === 'ArrowUp') {
+        handleOrangeClick();
+      } else if (event.key === 'ArrowLeft') {
+        handleGreenClick();
+      } else if (event.key === 'ArrowDown') {
+        decreaseOrange(); 
+      } else if (event.key === 'ArrowRight') {
+        decreaseGreen();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentGreen, currentOrange, greenParcial, orangeParcial]); 
+
   return (
     <ScoreStyle>
       <div className="reset" onClick={() => setIsOpenReset(true)}>
